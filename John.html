@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Matthew Gadut - Portfolio</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .container {
+    max-width: 850px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .profile-pic:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+  }
+
+  h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #ddd;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #fff;
+    background: #0078ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+
+  a:hover {
+    background: #005bb5;
+  }
+
+  /* Info Box Sections */
+  .info-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+  }
+
+  .info-box h3 {
+    color: #00aaff;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #e0e0e0;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  /* Inner link inside Skills */
+  .info-box a {
+    background: none;
+    color: #00aaff;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+  }
+
+  .info-box a:hover {
+    color: #66cfff;
+    text-decoration: underline;
+  }
+
+  /* Tooltip styling (different per link using data-tooltip) */
+  .info-box a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .info-box a:hover::after {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>John Matthew Gadut</h1>
+</header>
+
+<div class="container">
+  <img src="Profile 1.png" alt="John Matthew Gadut" class="profile-pic">
+  <h2>Team Member</h2>
+  <p>
+    Hi! I’m <strong>John Matthew Gadut</strong>, one of the dedicated members of Group 2.<br>
+    I enjoy contributing ideas, conducting research, and supporting my teammates throughout
+    every stage of our work to ensure we achieve our shared goals together.
+  </p>
+
+  <div class="info-box">
+    <h3>🎨 Hobbies</h3>
+    <ul>
+      <li>Building and customizing model kits</li>
+      <li>Watching movies and anime</li>
+      <li>Playing video games</li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h3>⚙️ Skills</h3>
+    <ul>
+      <li>Team collaboration and communication</li>
+      <li>Creative thinking and problem-solving</li>
+      <li><a href="HTML proj.html" data-tooltip="View my sample HTML project">Basic HTML and web content creation</a></li>
+      <li><a href="Certifactes.html" data-tooltip="Click to view my TESDA NC II Certificate">Computer Technician</a></li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h3>💡 Interests</h3>
+    <ul>
+      <li>Model design and engineering</li>
+      <li>Storytelling and animation</li>
+      <li>Technology and innovation</li>
+      <li>Exploring different art styles</li>
+      <li>Collaborative creative projects</li>
+    </ul>
+  </div>
+
+  <a href="index.html">⬅ Back to Group Portfolio</a>
+</div>
+</body>
+</html>
